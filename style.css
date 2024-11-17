@@ -1,0 +1,231 @@
+body{
+  margin: 0px;
+  background-color: #e7e6e2;
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+#name{
+  color: #2e2421;
+ 
+  text-align: center;
+  padding-top: 3px;
+  margin: 0px;
+ 
+}
+header{
+  background-color: #e7e6e2;
+  
+}
+/* navi ul it takes all*/
+.navi ul{
+  /* to remove the bullet point */
+  list-style-type: none;
+ /* to remove extra spaces */
+  padding:0 px;
+  margin: 0px;
+  background-color: #0C3B2E;
+  /* with this and */
+ overflow: hidden;
+}
+
+.navi li{
+  /* and with this, we make the navi horizantle */
+  float: left;
+}
+/* navi a its for thr <a href...> the links */
+.navi a{
+
+  /* it removes te underline of an link */
+  text-decoration: none;
+  /* remeber padding is the space in side of thr element so it gives space */
+  padding:15px 15px 15px 10px;
+  color: #e7e6e2;
+ display: block;
+ text-align: center;
+
+
+}
+/* its the shadow one you put the mouse on it */
+.navi a:hover{
+background-color: #609773;
+
+}
+
+.logo{
+  display: flex;
+  width: 300px;
+  height: 180px;
+  margin: auto;
+
+ 
+}
+
+#quote{
+  margin:0px;
+  text-align: center;
+  color:#2e2421;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+/* making both div sit in a row */
+.bothin{
+  display: flex;
+}
+
+.time{
+margin: 10px 4px 10px 12px;
+/* margin-right: 8px; */
+padding-left: 4px;
+padding-right: 4px;
+border: 3px solid #0C3B2E;
+/* makr the edge round */
+border-radius: 6px;
+/* it will make the border go onlt around the text n ot till the end of the web page */
+display: inline-block;
+background-color: #0C3B2E;
+color:#e7e6e2;
+font-size: 15px;
+}
+
+.offer{
+  padding-right: 30px;
+  margin: 10px 12px 10px 12px;
+  border: 3px solid #0C3B2E;
+  margin-left: 8px;
+  background-color: #0C3B2E;
+  border-radius: 6px;
+  color:#e7e6e2;
+  font-size: 15px;
+  
+}
+#special{
+ padding-left: 30px;
+ 
+
+}
+
+footer{
+  background-color: #e7e6e2;
+  color: #2e2421;
+  font-size: 13px;
+  padding-left: 10px;
+  flex: 1;
+}
+
+
+
+
+
+
+ .menu {
+    display: flex;
+    justify-content: center;   
+    /* addwd */
+    justify-content: space-between;
+    /* addwd */
+    box-sizing:border-box;
+     display: flex;
+     flex-wrap: wrap;
+} 
+
+.food {
+    display: flex;
+    width:100px;
+    max-width:calc(50% - 20px); 
+    height: 100px;
+    margin: 10px;
+    color:#e7e6e2;
+    background-color: #0C3B2E;
+    box-sizing: border-box; 
+    
+/* when you use it on your phon it will be in on column, one box in one row */
+   flex: 1 1 calc(50% - 20px);  /*Adjust flex property for better responsiveness  */
+    
+}
+
+
+
+ .box-content {
+  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 4px;
+    
+   
+    
+} 
+
+.about-us{
+  margin: 10px 4px 10px 12px;
+  
+}
+
+.our-space{
+  margin: 10px 4px 10px 12px;
+  color:#2e2421;
+  
+}
+
+
+#showplace{
+  text-align:center;
+}
+
+
+/* the photo show places */
+
+
+.containimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* height: 100%; Full height of the body */
+}
+
+.slider {
+  width: 500px;
+  overflow: hidden;
+  justify-content: center;
+  border: 5px solid #333; /* Add a border */
+  border-radius: 10px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better appearance */
+}
+
+
+
+.slides {
+  display: flex;
+  width: 2000px; /* 4 slides * 500px each */
+  animation: slide 16s infinite;
+ 
+
+}
+ 
+
+
+.slide {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center; 
+ 
+}
+
+@keyframes slide {
+  0%, 20% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-500px); }
+  50%, 70% { transform: translateX(-1000px); }
+  75%, 95% { transform: translateX(-1500px); }
+}
+
+
+@media (max-width: 768px) {
+  .food {
+      width: 100%; /* Make each item take full width */
+      max-width: 100%; /* Ensure it remains full width */
+      flex: 1 1 100%; /* Adjust flex property for one column layout */
+  }
+}
